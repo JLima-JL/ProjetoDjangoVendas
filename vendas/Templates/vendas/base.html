@@ -41,8 +41,11 @@
         <div class="row">
             <nav class="col-md-2 d-none d-md-block menu-lateral">
                 <h4>Sistema</h4>
-                <a href="{% url 'listar_vendas' %}">Listar Vendas</a>
-                <a href="{% url 'cadastrar_venda' %}">Cadastrar Venda</a>
+                <a href="{% url 'cadastrar_cliente' %}">➕Cadastrar Cliente</a>
+                <a href="{% url 'listar_clientes' %}">📋 Listar Clientes</a>
+                <hr style="border-color: #6c757d;">
+                <a href="{% url 'cadastrar_venda' %}">➕Cadastrar Venda</a>
+                <a href="{% url 'listar_vendas' %}">📊Listar Vendas</a>
             </nav>
             <main class="col-md-10 ms-sm-auto px-4">
                 <div class="conteudo">
