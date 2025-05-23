@@ -5,7 +5,7 @@ from .models import Vendas
 class VendaForm(forms.ModelForm):
     class Meta:
         model = Vendas
-        fields = ['produto', 'preco', 'quantidade', 'valor_total']  # ← data removido
+        fields = ['produto', 'preco', 'quantidade', 'valor_total']
         widgets = {
             'produto': forms.TextInput(attrs={'class': 'form-control'}),
             'preco': forms.NumberInput(attrs={'class': 'form-control'}),
