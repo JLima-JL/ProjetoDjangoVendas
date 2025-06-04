@@ -10,7 +10,7 @@
             <tr>
                 <th>Nome</th>
                 <th>CPF</th>
-                <th>Nascimento</th>
+                <th>Idade</th>
                 <th>Email</th>
                 <th>Telefone</th>
                 <th>Endereco</th>
@@ -20,11 +20,13 @@
         <tbody>
             {% for cliente in clientes %}
             <tr>
-                <td>{{ cliente.id }}</td>
                 <td>{{ cliente.nome }}</td>
                 <td>{{ cliente.cpf }}</td>
+                <td>{{ cliente.idade }}</td>
                 <td>{{ cliente.email }}</td>
                 <td>{{ cliente.telefone }}</td>
+                <td>{{ cliente.endereco }}</td>
+                <td>{{ cliente.profissao }}</td>
             </tr>
             {% empty %}
             <tr>

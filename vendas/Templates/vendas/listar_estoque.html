@@ -1,0 +1,26 @@
+{% extends 'vendas/base.html' %}
+{% block title %}Estoque{% endblock %}
+
+{% block conteudo %}
+    <h2 class="mb-4">Estoque</h2>
+    <table class="table table-striped table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Preco</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in estoque %}
+            <tr>
+                <td>{{ item.nome_produto }}</td>
+                <td>{{ item.quantidade }}</td>
+                <td>R$ {{ item.preco_uni }}</td>
+            </tr>
+            {% empty %}
+            <tr><td colspan="5">Nenhum produto cadastrado no estoque.</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

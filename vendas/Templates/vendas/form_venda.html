@@ -3,6 +3,12 @@
 
 {% block conteudo %}
   <h2 class="mb-4">Cadastrar Venda</h2>
+
+  <div class="d-flex justify-content-end">
+  <a href="{% url 'cadastrar_cliente' %}" class="btn btn-outline-primary mb-3">
+    Cadastrar Novo cliente ➕
+  </a>
+  </div>
   <form method="post" class="bg-white p-4 rounded shadow-sm">
     {% csrf_token %}
     {% for field in form %}
